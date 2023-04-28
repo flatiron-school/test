@@ -13,13 +13,13 @@
 ## Deliverables
 
 #### 1. Create a `CrewMember` model with the additional following columns:
-##### - name:string, role: string, production_id:integer
+- name:string, role: string, production_id:integer
 ##### 1a. Include some seed data
 
 <br />
 
 #### 2. Set up the Flask app in the terminal
-##### 2a. `cd` into `server` and run
+- `cd` into `server` and run
 `export FLASK_APP=app.py` <br />
 `export FLASK_RUN_PORT=5000` <br />
 `flask db init` <br />
@@ -30,20 +30,21 @@
 <br />
 
 #### 3. Import `Api` and `Resource` from flask_restful
+- What do these two classes do at a higher level?
 ##### 3a. Initialize the Api
 
 <br />
 
 #### 4. Create a Productions class that inherits from Resource
-##### 4a. create a `/productions` resource using the `Productions` class
-##### 4b. Create a GET (all) productions route 
-##### - You will have to manually build out the dictionary for each instance
+##### - create a `/productions` resource using the `Productions` class
+##### 4a. Create a GET (all) productions route 
+##### - Do this by manually building out the dictionary
 
 <br />
 
 #### 5. Use SerializerMixin so we don't have to manually build the dictionary
-##### 5a. Import `SerializerMixin`
-##### 5b. Pass `SerializerMixin` to `Productions`
+##### - Import `SerializerMixin`
+##### - Pass `SerializerMixin` to `Productions`
 
 <br />
 
@@ -62,7 +63,7 @@
 <br />
 
 #### 9. Create a `ProductionById` class to GET one production
-##### 9a. Create a new resource for `ProductionById` at `/productions/<int:id>`
+##### - Create a new resource for `ProductionById` at `/productions/<int:id>`
 
 <br />
 
